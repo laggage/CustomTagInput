@@ -1,0 +1,51 @@
+.tag-input-wrapper {
+  display: flex;
+  align-items: stretch;
+  height: 28px;
+}
+
+.tag-input-wrapper>div:not(:last-child) {
+  margin-right: 4px;
+}
+
+.tag-list {
+  display: flex;
+  align-items: stretch;
+}
+
+.tag-list span {
+  display: flex;
+  align-items: center;
+}
+
+.disabled {
+  background-color: #fff;
+  pointer-events: none;
+  opacity: .6;
+}
+
+.tag {
+  padding: 4px 8px;
+  background-color: #f1c40f;
+  display: inline-block;
+  font: 400 13.3333px Arial;
+  color: white;
+}
+
+.tag:not(:last-child) {
+  margin-right: 4px;
+}
+
+.btn-add-tag {
+  padding: 4px 8px;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  height: 100%;
+  outline: none !important;
+}
+
+input[type='text'] {
+  padding: 4px 8px;
+  width: 70px;
+}

@@ -1,0 +1,22 @@
+<div [class.disabled]='disabled'
+     class="tag-input-wrapper">
+  <div class="tag-list">
+    <span class="tag"
+          *ngFor="let tag of tags">
+      {{tag}}
+    </span>
+  </div>
+  <div>
+    <ng-container *ngIf="!isInputting">
+      <button class="btn-add-tag"
+              (click)="onClick()">新增标签</button>
+    </ng-container>
+    <ng-container *ngIf="isInputting">
+      <input type="text"
+             #tagInputEl
+             (keydown)="onKeyDown($event)"
+             [(ngModel)]="tagInput"
+             (blur)="onBlur()">
+    </ng-container>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div>
+  <p>
+    使用 <strong>模板驱动的表单(Template-driven)</strong> 演示 TagInput
+  </p>
+</div>
+
+<form>
+  <div>
+    <cti-tag-input [(ngModel)]="tags"
+                   [ngModelOptions]="{standalone: true}"></cti-tag-input>
+  </div>
+</form>
+
+<div style="margin-top: 16px;">
+  <h2>表单值</h2>
+  <code>
+    tags
+  </code>
+  <p>
+    {{tags|json}}
+  </p>
+</div>

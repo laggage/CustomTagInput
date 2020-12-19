@@ -1,0 +1,21 @@
+<div>
+  <p>
+    使用 <strong>响应式表单(ReactiveForm)</strong> 演示 TagInput
+  </p>
+</div>
+
+<form>
+  <div>
+    <cti-tag-input [formControl]="control('tags')"></cti-tag-input>
+  </div>
+</form>
+
+<div style="margin-top: 16px;">
+  <h2>表单值</h2>
+  <code>
+    fromGroup.getRawValue()
+  </code>
+  <p>
+    {{fromGroup.getRawValue()|json}}
+  </p>
+</div>
